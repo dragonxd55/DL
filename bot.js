@@ -134,7 +134,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
 
 
 client.on('message', message => {
-    var prefix = "3";
+    var prefix = "!";
     
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
